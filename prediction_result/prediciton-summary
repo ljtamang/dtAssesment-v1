@@ -33,3 +33,12 @@ The result of predictor using logsitc classifer in weka with default setting and
 	Features: DM_max_cosSim, DM_mean_cosSim, DBOW_max_cosSim, DBOW_mean_cosSim, DM_DBOW_max_cosSim, DM_DBOW_mean_cosSim
 	Gold Label: Annotation 
 	Accuracy: 42.1111
+	
+	
+   DM_max_cosSim : max cosine simialrity scores between a answer and set of refrences answers using PV-DM vectors 
+   DM_max_cosSim : averagge cosine simialrity scores of scores between a answer and set of refrences answers using PV-DM vectors 
+   DBOW_max_cosSim : max cosine simialrity scores between a answer and set of refrences answers using PV-DBOW vectors 
+   DBOW_mean_cosSim : averagge cosine simialrity scores of scores between a answer and set of refrences answers using PV-DBOW vectors 
+   DM_DBOW_max_cosSim : max cosine simialrity scores between a answer and set of refrences answers using concatination of PV-DBOW  and PV-DM vectors 
+   DM_DBOW_mean_cosSim : averagge cosine simialrity scores of scores between a answer and set of refrences answers using concatination of PV-DBOW  and PV-DM vectors 
+   Annotation : gold label for student answers which can be correct, correct_but_incomplete, contradictory and incorrect
