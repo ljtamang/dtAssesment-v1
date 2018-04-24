@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     result
+Instances:    900
+Attributes:   7
+              DM_max_cosSim
+              DM_mean_cosSim
+              DBOW_max_cosSim
+              DBOW_mean_cosSim
+              DM_DBOW_max_cosSim
+              DM_DBOW_mean_cosSim
+              Annotation
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                        Class
+Variable               correct_but_incomplete                 correct               incorrect
+=============================================================================================
+DM_max_cosSim                         -2.0535                 -0.7005                 -0.6208
+DM_mean_cosSim                         5.2004                  3.5557                  -0.358
+DBOW_max_cosSim                        0.4297                  1.6852                   2.078
+DBOW_mean_cosSim                        1.382                 -1.1352                 -0.1344
+DM_DBOW_max_cosSim                    -1.5762                 -2.3728                 -2.2691
+DM_DBOW_mean_cosSim                   -0.4257                  1.2771                  0.5992
+Intercept                              1.0877                  1.6353                  0.9306
+
+
+Odds Ratios...
+                                        Class
+Variable               correct_but_incomplete                 correct               incorrect
+=============================================================================================
+DM_max_cosSim                          0.1283                  0.4963                  0.5375
+DM_mean_cosSim                       181.3404                 35.0109                  0.6991
+DBOW_max_cosSim                        1.5368                  5.3933                  7.9882
+DBOW_mean_cosSim                        3.983                  0.3214                  0.8742
+DM_DBOW_max_cosSim                     0.2068                  0.0932                  0.1034
+DM_DBOW_mean_cosSim                    0.6533                  3.5864                  1.8207
+
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         379               42.1111 %
+Incorrectly Classified Instances       521               57.8889 %
+Kappa statistic                          0.0588
+Mean absolute error                      0.3444
+Root mean squared error                  0.4167
+Relative absolute error                 98.2924 %
+Root relative squared error             99.5819 %
+Total Number of Instances              900     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.014    0.016    0.214      0.014    0.027      -0.006   0.543     0.269     correct_but_incomplete
+                 0.878    0.816    0.427      0.878    0.574      0.083    0.562     0.459     correct
+                 0.225    0.113    0.414      0.225    0.291      0.141    0.596     0.359     incorrect
+                 0.000    0.001    0.000      0.000    0.000      -0.011   0.522     0.099     contradictory
+Weighted Avg.    0.421    0.367    0.333      0.421    0.317      0.069    0.563     0.354     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+   3 183  24   0 |   a = correct_but_incomplete
+   5 323  39   1 |   b = correct
+   6 177  53   0 |   c = incorrect
+   0  74  12   0 |   d = contradictory
+

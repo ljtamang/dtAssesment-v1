@@ -1,0 +1,35 @@
+  
+Summary output:
+----------------
+The result of predictor using logsitc classifer in weka with default setting and 10 cross fold valiation looks likes as folows:
+
+	Features: DM_max_cosSim
+	Gold Label: Annotation
+	Accuracy: 41.5556
+
+
+	Features: DM_mean_cosSim
+	Gold Label: Annotation
+	Accuracy: 43.2222
+
+	Features: DBOW_max_cosSim
+	Gold Label: Annotation
+	Accuracy: 40.8889
+
+	Features: DBOW_mean_cosSim
+	Gold Label: Annotation
+	Accuracy: 40.8889
+
+
+	Features: DM_DBOW_max_cosSim
+	Gold Label: Annotation
+	Accuracy: 40.8889
+
+	Features: DM_DBOW_mean_cosSim
+	Gold Label: Annotation
+	Accuracy: 40.8889
+
+
+	Features: DM_max_cosSim, DM_mean_cosSim, DBOW_max_cosSim, DBOW_mean_cosSim, DM_DBOW_max_cosSim, DM_DBOW_mean_cosSim
+	Gold Label: Annotation 
+	Accuracy: 42.1111

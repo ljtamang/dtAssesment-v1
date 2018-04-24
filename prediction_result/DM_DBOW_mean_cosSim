@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     result-weka.filters.unsupervised.attribute.Remove-R1-5
+Instances:    900
+Attributes:   2
+              DM_DBOW_mean_cosSim
+              Annotation
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                        Class
+Variable               correct_but_incomplete                 correct               incorrect
+=============================================================================================
+DM_DBOW_mean_cosSim                    0.0226                 -0.2738                 -0.0843
+Intercept                              0.8861                  1.5342                  1.0344
+
+
+Odds Ratios...
+                                        Class
+Variable               correct_but_incomplete                 correct               incorrect
+=============================================================================================
+DM_DBOW_mean_cosSim                    1.0228                  0.7605                  0.9192
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         368               40.8889 %
+Incorrectly Classified Instances       532               59.1111 %
+Kappa statistic                          0     
+Mean absolute error                      0.3506
+Root mean squared error                  0.419 
+Relative absolute error                100.0648 %
+Root relative squared error            100.119  %
+Total Number of Instances              900     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    ?          0.000    ?          ?        0.503     0.232     correct_but_incomplete
+                 1.000    1.000    0.409      1.000    0.580      ?        0.483     0.396     correct
+                 0.000    0.000    ?          0.000    ?          ?        0.432     0.227     incorrect
+                 0.000    0.000    ?          0.000    ?          ?        0.390     0.074     contradictory
+Weighted Avg.    0.409    0.409    ?          0.409    ?          ?        0.465     0.282     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+   0 210   0   0 |   a = correct_but_incomplete
+   0 368   0   0 |   b = correct
+   0 236   0   0 |   c = incorrect
+   0  86   0   0 |   d = contradictory
+
