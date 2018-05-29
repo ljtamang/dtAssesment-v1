@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     stnadrized_score_upsampled
+Instances:    1472
+Attributes:   7
+              DM_max_cosSim
+              DM_mean_cosSim
+              DBOW_max_cosSim
+              DBOW_mean_cosSim
+              DM_DBOW_max_cosSim
+              DM_DBOW_mean_cosSim
+              Annotation
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.63 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1105               75.0679 %
+Incorrectly Classified Instances       367               24.9321 %
+Kappa statistic                          0.6676
+Mean absolute error                      0.1823
+Root mean squared error                  0.2832
+Relative absolute error                 48.6094 %
+Root relative squared error             65.4069 %
+Total Number of Instances             1472     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.992    0.047    0.875      0.992    0.930      0.908    0.998     0.996     contradictory
+                 0.788    0.095    0.734      0.788    0.760      0.677    0.931     0.885     correct_but_incomplete
+                 0.478    0.090    0.640      0.478    0.547      0.432    0.881     0.612     correct
+                 0.745    0.101    0.712      0.745    0.728      0.635    0.923     0.852     incorrect
+Weighted Avg.    0.751    0.083    0.740      0.751    0.741      0.663    0.933     0.836     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+ 365   2   1   0 |   a = contradictory
+  12 290  42  24 |   b = correct_but_incomplete
+  29  76 176  87 |   c = correct
+  11  27  56 274 |   d = incorrect
+

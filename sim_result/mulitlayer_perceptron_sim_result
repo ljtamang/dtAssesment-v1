@@ -1,0 +1,100 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.01 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 2
+Relation:     stnadrized_score_upsampled
+Instances:    1472
+Attributes:   7
+              DM_max_cosSim
+              DM_mean_cosSim
+              DBOW_max_cosSim
+              DBOW_mean_cosSim
+              DM_DBOW_max_cosSim
+              DM_DBOW_mean_cosSim
+              Annotation
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.15854260596038258
+    Node 4    -0.6068034309044069
+    Node 5    -1.7675475889764956
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.7926747359231177
+    Node 4    0.03468880778928262
+    Node 5    1.8870086940284143
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.7191258713942019
+    Node 4    -1.4644527333965267
+    Node 5    0.9694071139884033
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.9606617478807947
+    Node 4    1.13011384664691
+    Node 5    -2.1065878070303783
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.5869780886072867
+    Attrib DM_max_cosSim    -0.6954045707375215
+    Attrib DM_mean_cosSim    -1.0999536060087944
+    Attrib DBOW_max_cosSim    0.3436941993391802
+    Attrib DBOW_mean_cosSim    0.877437585906444
+    Attrib DM_DBOW_max_cosSim    -0.27882743293026757
+    Attrib DM_DBOW_mean_cosSim    -0.17538363565066992
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    0.06572695326224733
+    Attrib DM_max_cosSim    -0.4228576214020111
+    Attrib DM_mean_cosSim    2.962180710645038
+    Attrib DBOW_max_cosSim    0.14089511981140287
+    Attrib DBOW_mean_cosSim    0.595301399411194
+    Attrib DM_DBOW_max_cosSim    -1.2568805105267833
+    Attrib DM_DBOW_mean_cosSim    0.5220368762519614
+Class contradictory
+    Input
+    Node 0
+Class correct_but_incomplete
+    Input
+    Node 1
+Class correct
+    Input
+    Node 2
+Class incorrect
+    Input
+    Node 3
+
+
+Time taken to build model: 1.25 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         440               29.8913 %
+Incorrectly Classified Instances      1032               70.1087 %
+Kappa statistic                          0.0652
+Mean absolute error                      0.3714
+Root mean squared error                  0.431 
+Relative absolute error                 99.0372 %
+Root relative squared error             99.5412 %
+Total Number of Instances             1472     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.163    0.111    0.328      0.163    0.218      0.068    0.547     0.269     contradictory
+                 0.177    0.155    0.275      0.177    0.215      0.026    0.555     0.309     correct_but_incomplete
+                 0.353    0.254    0.317      0.353    0.334      0.096    0.561     0.301     correct
+                 0.503    0.415    0.288      0.503    0.366      0.077    0.566     0.323     incorrect
+Weighted Avg.    0.299    0.234    0.302      0.299    0.283      0.067    0.557     0.300     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+  60  52  93 163 |   a = contradictory
+  37  65 111 155 |   b = correct_but_incomplete
+  45  53 130 140 |   c = correct
+  41  66  76 185 |   d = incorrect
+

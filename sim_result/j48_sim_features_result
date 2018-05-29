@@ -1,0 +1,535 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     stnadrized_score_upsampled
+Instances:    1472
+Attributes:   7
+              DM_max_cosSim
+              DM_mean_cosSim
+              DBOW_max_cosSim
+              DBOW_mean_cosSim
+              DM_DBOW_max_cosSim
+              DM_DBOW_mean_cosSim
+              Annotation
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+DM_mean_cosSim <= 0.636037
+|   DBOW_max_cosSim <= 0.987804
+|   |   DM_mean_cosSim <= -1.106695
+|   |   |   DBOW_max_cosSim <= -1.483658
+|   |   |   |   DM_DBOW_max_cosSim <= -1.974915
+|   |   |   |   |   DM_max_cosSim <= -1.19963: correct_but_incomplete (3.0)
+|   |   |   |   |   DM_max_cosSim > -1.19963: incorrect (3.0/1.0)
+|   |   |   |   DM_DBOW_max_cosSim > -1.974915
+|   |   |   |   |   DBOW_max_cosSim <= -1.684153: contradictory (11.0)
+|   |   |   |   |   DBOW_max_cosSim > -1.684153: correct_but_incomplete (2.0)
+|   |   |   DBOW_max_cosSim > -1.483658
+|   |   |   |   DBOW_mean_cosSim <= 0.898716
+|   |   |   |   |   DM_max_cosSim <= -1.138679
+|   |   |   |   |   |   DM_mean_cosSim <= -2.359246: incorrect (9.0/1.0)
+|   |   |   |   |   |   DM_mean_cosSim > -2.359246: correct (16.0/6.0)
+|   |   |   |   |   DM_max_cosSim > -1.138679
+|   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.230122
+|   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.094578
+|   |   |   |   |   |   |   |   DBOW_mean_cosSim <= 0.221291
+|   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= -0.699089: incorrect (5.0)
+|   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > -0.699089
+|   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.015185
+|   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -1.068624: correct_but_incomplete (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -1.068624: incorrect (5.0)
+|   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.015185: correct_but_incomplete (13.0/1.0)
+|   |   |   |   |   |   |   |   DBOW_mean_cosSim > 0.221291: incorrect (6.0)
+|   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.094578
+|   |   |   |   |   |   |   |   DM_max_cosSim <= -0.313582: correct (2.0)
+|   |   |   |   |   |   |   |   DM_max_cosSim > -0.313582: correct_but_incomplete (2.0)
+|   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.230122: incorrect (13.0/1.0)
+|   |   |   |   DBOW_mean_cosSim > 0.898716
+|   |   |   |   |   DM_mean_cosSim <= -1.447711
+|   |   |   |   |   |   DM_max_cosSim <= -1.19963: incorrect (4.0)
+|   |   |   |   |   |   DM_max_cosSim > -1.19963: correct_but_incomplete (2.0/1.0)
+|   |   |   |   |   DM_mean_cosSim > -1.447711: contradictory (6.0/1.0)
+|   |   DM_mean_cosSim > -1.106695
+|   |   |   DBOW_max_cosSim <= 0.95479
+|   |   |   |   DBOW_max_cosSim <= 0.879813
+|   |   |   |   |   DM_mean_cosSim <= 0.590588
+|   |   |   |   |   |   DM_mean_cosSim <= 0.485705
+|   |   |   |   |   |   |   DM_max_cosSim <= -0.695547
+|   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 1.161436
+|   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.343779
+|   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.715358
+|   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.359258
+|   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.576683
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.870563
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.853864
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= 0.130691: correct (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > 0.130691: correct_but_incomplete (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.853864
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= -0.321656: contradictory (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > -0.321656: correct_but_incomplete (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.870563
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= -2.327116
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= -2.507232
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= -2.667572: incorrect (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > -2.667572: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > -2.507232: contradictory (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > -2.327116
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= -0.527001
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= -1.958169
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.889282: correct (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.889282: correct_but_incomplete (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > -1.958169
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= -1.151353
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= -1.66549
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= -2.048502
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= -2.152432: incorrect (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > -2.152432
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= -1.999228: correct (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > -1.999228: incorrect (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > -2.048502
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= -1.942644: correct_but_incomplete (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > -1.942644: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > -1.66549: incorrect (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > -1.151353
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= -0.594956
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -1.068624: correct_but_incomplete (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -1.068624
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.567568: correct (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.567568
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= -0.923879: correct (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > -0.923879: correct_but_incomplete (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > -0.594956: incorrect (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > -0.527001
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.436027
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= -0.604288: correct_but_incomplete (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > -0.604288
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.638145
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.952661: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.952661: incorrect (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.638145: correct (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.436027: contradictory (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.576683
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 1.247827: contradictory (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 1.247827: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.359258
+|   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.125384
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.867736: correct_but_incomplete (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.867736
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.288462
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.728753
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.301573: correct_but_incomplete (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.301573: incorrect (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.728753: contradictory (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.288462
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= -0.384383: contradictory (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > -0.384383
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.251972: contradictory (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.251972: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.125384
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.798808: incorrect (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.798808: correct_but_incomplete (8.0)
+|   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.715358
+|   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= 0.24369: correct (8.0)
+|   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > 0.24369: incorrect (5.0/1.0)
+|   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.343779
+|   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 1.082017
+|   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.955212
+|   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.837781
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.025227: correct (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.025227
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.879522: correct (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.879522: correct_but_incomplete (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.837781
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.059516: incorrect (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.059516
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.791828: incorrect (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.791828
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.718783: correct (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.718783
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.523669: correct_but_incomplete (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.523669: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.955212
+|   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.554749: incorrect (14.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.554749: correct (5.0)
+|   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 1.082017: incorrect (6.0/1.0)
+|   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 1.161436
+|   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= 0.790183: correct_but_incomplete (8.0)
+|   |   |   |   |   |   |   |   |   DBOW_max_cosSim > 0.790183: contradictory (3.0)
+|   |   |   |   |   |   |   DM_max_cosSim > -0.695547
+|   |   |   |   |   |   |   |   DM_max_cosSim <= -0.656834
+|   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= -1.757516: correct (6.0/1.0)
+|   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > -1.757516
+|   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= -0.122297
+|   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.692035: contradictory (10.0)
+|   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.692035
+|   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.690084: incorrect (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.690084: correct_but_incomplete (2.0)
+|   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > -0.122297
+|   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.178074: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.178074: contradictory (17.0/1.0)
+|   |   |   |   |   |   |   |   DM_max_cosSim > -0.656834
+|   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.621027
+|   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.248813
+|   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= -1.910026: incorrect (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > -1.910026: correct_but_incomplete (14.0)
+|   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.248813: correct (5.0/1.0)
+|   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.621027
+|   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.60451
+|   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.617125: incorrect (3.0)
+|   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.617125: contradictory (20.0/2.0)
+|   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.60451
+|   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= 0.097909
+|   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= -0.393198
+|   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= -0.48452
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= -0.371132
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= -0.64411
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= -0.742475
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.00892
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= 0.174071
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.124
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.528746
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.525828: correct_but_incomplete (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.525828: contradictory (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.528746: correct (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.124: contradictory (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > 0.174071: incorrect (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.00892
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= -1.543428
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= 0.102933: incorrect (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > 0.102933: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > -1.543428
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.377612: correct_but_incomplete (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.377612: correct (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > -0.742475: contradictory (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > -0.64411
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= -1.137194: correct (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > -1.137194
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= 0.178413: correct_but_incomplete (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > 0.178413: incorrect (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > -0.371132
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.19902: correct_but_incomplete (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.19902: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > -0.48452
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= -0.17187
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= -0.340223: incorrect (13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > -0.340223
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= -0.052092
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.004187: incorrect (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.004187: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > -0.052092: correct (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > -0.17187
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= -0.527241: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > -0.527241: contradictory (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > -0.393198
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.177316
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.432749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.401585: incorrect (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.401585: correct (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.432749: incorrect (13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.177316
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= -0.378381: incorrect (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > -0.378381
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= 0.158682
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= 0.000306: correct_but_incomplete (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > 0.000306
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.662598
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= -0.131149: incorrect (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > -0.131149: correct (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.662598: correct_but_incomplete (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > 0.158682: correct (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > 0.097909
+|   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= -0.582848
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.007463
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.446843: correct_but_incomplete (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.446843: incorrect (14.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.007463
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= -0.803374: correct_but_incomplete (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > -0.803374: correct (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > -0.582848
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.577676
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= -0.032864: correct_but_incomplete (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > -0.032864
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.990936
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= 0.250135: incorrect (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > 0.250135: correct (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.990936: incorrect (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.577676
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= 1.184883
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= 0.801683
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.78367
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= 0.739967
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.879522: correct_but_incomplete (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.879522
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= 0.05646: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > 0.05646: correct_but_incomplete (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > 0.739967: correct (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.78367
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= -0.662705: contradictory (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > -0.662705
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= 0.430231
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.992788
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.328235
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.592412
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= -0.723775: correct_but_incomplete (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > -0.723775
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= 0.487493
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.647194
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.286204
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.567315: contradictory (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.567315: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.286204: contradictory (13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.647194: correct_but_incomplete (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > 0.487493: correct (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.592412
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.452435
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.545596: correct_but_incomplete (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.545596: correct (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.452435: correct_but_incomplete (13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.328235
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= 0.277833
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.863037
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.626364
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.231299
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.054258: incorrect (21.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.054258
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= 0.167492
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= 0.552779: contradictory (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > 0.552779: incorrect (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > 0.167492
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= 0.242345: correct_but_incomplete (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > 0.242345
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= 0.429533: incorrect (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > 0.429533: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.231299
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= 0.879157
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.711782: correct_but_incomplete (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.711782
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.528611
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.263076: contradictory (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.263076: correct (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.528611
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= 0.133255: contradictory (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > 0.133255
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= 0.112817: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > 0.112817: contradictory (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > 0.879157: incorrect (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.626364
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.243377: correct (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.243377: incorrect (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.863037
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= -0.261518: contradictory (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > -0.261518
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 1.142854: correct_but_incomplete (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 1.142854: correct (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > 0.277833
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= 1.272955
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.191515
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= -0.076479: correct (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > -0.076479: incorrect (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.191515: correct_but_incomplete (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > 1.272955: incorrect (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.992788
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 1.452076
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= 0.256487: correct_but_incomplete (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > 0.256487
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.27324: correct_but_incomplete (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.27324
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.481217: correct (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.481217: contradictory (37.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 1.452076
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= 1.074475: correct (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > 1.074475: incorrect (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > 0.430231
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.472205
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= 0.542588
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= -0.310006: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > -0.310006
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim <= 0.033689
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= -0.182298: incorrect (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > -0.182298: contradictory (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > 0.033689: contradictory (27.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_mean_cosSim > 0.542588
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= 0.476574: incorrect (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > 0.476574: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.472205
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= 0.451473
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.913383
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= -0.074399: incorrect (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > -0.074399
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.684432: incorrect (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.684432: correct (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.913383: correct (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > 0.451473: contradictory (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > 0.801683
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.744676: contradictory (17.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.744676
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 1.339299
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 1.3349: correct (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 1.3349: incorrect (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 1.339299: contradictory (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > 1.184883
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= 0.371718: incorrect (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > 0.371718: correct_but_incomplete (3.0)
+|   |   |   |   |   |   DM_mean_cosSim > 0.485705
+|   |   |   |   |   |   |   DM_mean_cosSim <= 0.4884: incorrect (5.0/1.0)
+|   |   |   |   |   |   |   DM_mean_cosSim > 0.4884
+|   |   |   |   |   |   |   |   DBOW_max_cosSim <= 0.650152
+|   |   |   |   |   |   |   |   |   DM_max_cosSim <= 1.221731
+|   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= -1.137194: correct (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > -1.137194: correct_but_incomplete (10.0/1.0)
+|   |   |   |   |   |   |   |   |   DM_max_cosSim > 1.221731
+|   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= 2.389993: incorrect (2.0)
+|   |   |   |   |   |   |   |   |   |   DM_max_cosSim > 2.389993: correct (2.0)
+|   |   |   |   |   |   |   |   DBOW_max_cosSim > 0.650152: correct (3.0)
+|   |   |   |   |   DM_mean_cosSim > 0.590588
+|   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.451169
+|   |   |   |   |   |   |   DM_mean_cosSim <= 0.61273: correct (6.0/1.0)
+|   |   |   |   |   |   |   DM_mean_cosSim > 0.61273
+|   |   |   |   |   |   |   |   DM_mean_cosSim <= 0.630138: correct_but_incomplete (2.0)
+|   |   |   |   |   |   |   |   DM_mean_cosSim > 0.630138: contradictory (2.0)
+|   |   |   |   |   |   DM_DBOW_max_cosSim > 0.451169: contradictory (16.0)
+|   |   |   |   DBOW_max_cosSim > 0.879813
+|   |   |   |   |   DBOW_max_cosSim <= 0.917139
+|   |   |   |   |   |   DBOW_max_cosSim <= 0.891266
+|   |   |   |   |   |   |   DBOW_max_cosSim <= 0.88955: correct_but_incomplete (4.0)
+|   |   |   |   |   |   |   DBOW_max_cosSim > 0.88955: incorrect (2.0)
+|   |   |   |   |   |   DBOW_max_cosSim > 0.891266: correct_but_incomplete (12.0/1.0)
+|   |   |   |   |   DBOW_max_cosSim > 0.917139
+|   |   |   |   |   |   DM_DBOW_max_cosSim <= 1.082017: incorrect (8.0/1.0)
+|   |   |   |   |   |   DM_DBOW_max_cosSim > 1.082017: correct (3.0/1.0)
+|   |   |   DBOW_max_cosSim > 0.95479
+|   |   |   |   DM_DBOW_max_cosSim <= 1.360895
+|   |   |   |   |   DM_DBOW_mean_cosSim <= 0.647194: correct_but_incomplete (4.0)
+|   |   |   |   |   DM_DBOW_mean_cosSim > 0.647194: contradictory (19.0/1.0)
+|   |   |   |   DM_DBOW_max_cosSim > 1.360895: correct (3.0)
+|   DBOW_max_cosSim > 0.987804
+|   |   DM_mean_cosSim <= 0.138426: incorrect (51.0/21.0)
+|   |   DM_mean_cosSim > 0.138426
+|   |   |   DM_DBOW_mean_cosSim <= 0.422319: correct (4.0/1.0)
+|   |   |   DM_DBOW_mean_cosSim > 0.422319
+|   |   |   |   DBOW_mean_cosSim <= 1.135187: correct_but_incomplete (8.0/1.0)
+|   |   |   |   DBOW_mean_cosSim > 1.135187: correct (2.0)
+DM_mean_cosSim > 0.636037
+|   DBOW_max_cosSim <= 0.927386
+|   |   DBOW_mean_cosSim <= 0.093383
+|   |   |   DM_DBOW_mean_cosSim <= 0.304693
+|   |   |   |   DM_DBOW_mean_cosSim <= -1.404264: correct_but_incomplete (6.0/1.0)
+|   |   |   |   DM_DBOW_mean_cosSim > -1.404264
+|   |   |   |   |   DM_mean_cosSim <= 0.661676: correct (4.0/1.0)
+|   |   |   |   |   DM_mean_cosSim > 0.661676
+|   |   |   |   |   |   DBOW_mean_cosSim <= -1.940552
+|   |   |   |   |   |   |   DM_max_cosSim <= 1.522933: correct_but_incomplete (6.0/1.0)
+|   |   |   |   |   |   |   DM_max_cosSim > 1.522933: correct (3.0)
+|   |   |   |   |   |   DBOW_mean_cosSim > -1.940552
+|   |   |   |   |   |   |   DM_mean_cosSim <= 0.66692: correct_but_incomplete (2.0)
+|   |   |   |   |   |   |   DM_mean_cosSim > 0.66692: correct (45.0/16.0)
+|   |   |   DM_DBOW_mean_cosSim > 0.304693
+|   |   |   |   DM_max_cosSim <= 1.632654
+|   |   |   |   |   DM_max_cosSim <= 1.297075: correct (4.0/1.0)
+|   |   |   |   |   DM_max_cosSim > 1.297075: correct_but_incomplete (6.0)
+|   |   |   |   DM_max_cosSim > 1.632654
+|   |   |   |   |   DM_mean_cosSim <= 1.911458: correct (3.0)
+|   |   |   |   |   DM_mean_cosSim > 1.911458
+|   |   |   |   |   |   DM_DBOW_max_cosSim <= 1.323583
+|   |   |   |   |   |   |   DM_max_cosSim <= 2.045224: contradictory (5.0)
+|   |   |   |   |   |   |   DM_max_cosSim > 2.045224: correct (2.0)
+|   |   |   |   |   |   DM_DBOW_max_cosSim > 1.323583: contradictory (4.0)
+|   |   DBOW_mean_cosSim > 0.093383
+|   |   |   DM_mean_cosSim <= 0.907277
+|   |   |   |   DBOW_max_cosSim <= 0.00763: correct_but_incomplete (11.0)
+|   |   |   |   DBOW_max_cosSim > 0.00763
+|   |   |   |   |   DBOW_mean_cosSim <= 0.638238: correct (8.0)
+|   |   |   |   |   DBOW_mean_cosSim > 0.638238
+|   |   |   |   |   |   DM_max_cosSim <= 0.862656
+|   |   |   |   |   |   |   DBOW_max_cosSim <= 0.624418: correct (3.0/1.0)
+|   |   |   |   |   |   |   DBOW_max_cosSim > 0.624418: correct_but_incomplete (7.0/1.0)
+|   |   |   |   |   |   DM_max_cosSim > 0.862656: correct_but_incomplete (9.0)
+|   |   |   DM_mean_cosSim > 0.907277
+|   |   |   |   DM_mean_cosSim <= 1.027309
+|   |   |   |   |   DBOW_mean_cosSim <= 0.413984: incorrect (4.0/1.0)
+|   |   |   |   |   DBOW_mean_cosSim > 0.413984: correct (8.0)
+|   |   |   |   DM_mean_cosSim > 1.027309
+|   |   |   |   |   DBOW_max_cosSim <= 0.909349
+|   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.306566
+|   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.769911
+|   |   |   |   |   |   |   |   DM_max_cosSim <= 1.011696
+|   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= -0.140158
+|   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= 1.638107: incorrect (2.0)
+|   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > 1.638107: correct_but_incomplete (2.0)
+|   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > -0.140158: correct_but_incomplete (9.0)
+|   |   |   |   |   |   |   |   DM_max_cosSim > 1.011696
+|   |   |   |   |   |   |   |   |   DM_max_cosSim <= 1.696726: correct (5.0/1.0)
+|   |   |   |   |   |   |   |   |   DM_max_cosSim > 1.696726: correct_but_incomplete (8.0)
+|   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.769911
+|   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.274344: correct (7.0/1.0)
+|   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.274344: correct_but_incomplete (2.0)
+|   |   |   |   |   |   DM_DBOW_max_cosSim > 0.306566
+|   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.096254: incorrect (6.0)
+|   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.096254
+|   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.440742: correct (5.0)
+|   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.440742
+|   |   |   |   |   |   |   |   |   DM_mean_cosSim <= 1.377866
+|   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim <= 0.926146: correct_but_incomplete (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   DM_DBOW_max_cosSim > 0.926146: correct (3.0)
+|   |   |   |   |   |   |   |   |   DM_mean_cosSim > 1.377866
+|   |   |   |   |   |   |   |   |   |   DM_mean_cosSim <= 2.769022
+|   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim <= 0.776292: correct_but_incomplete (4.0)
+|   |   |   |   |   |   |   |   |   |   |   DM_DBOW_mean_cosSim > 0.776292
+|   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim <= 1.561559
+|   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim <= 0.51077: incorrect (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DBOW_max_cosSim > 0.51077: correct_but_incomplete (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DM_max_cosSim > 1.561559: incorrect (12.0)
+|   |   |   |   |   |   |   |   |   |   DM_mean_cosSim > 2.769022: correct (2.0)
+|   |   |   |   |   DBOW_max_cosSim > 0.909349: correct_but_incomplete (8.0)
+|   DBOW_max_cosSim > 0.927386
+|   |   DM_mean_cosSim <= 0.792779
+|   |   |   DM_mean_cosSim <= 0.736405: correct_but_incomplete (3.0)
+|   |   |   DM_mean_cosSim > 0.736405: incorrect (4.0/1.0)
+|   |   DM_mean_cosSim > 0.792779
+|   |   |   DM_mean_cosSim <= 0.854908: contradictory (16.0/1.0)
+|   |   |   DM_mean_cosSim > 0.854908
+|   |   |   |   DBOW_mean_cosSim <= 1.15137: correct (15.0/1.0)
+|   |   |   |   DBOW_mean_cosSim > 1.15137
+|   |   |   |   |   DM_max_cosSim <= 1.95189: correct (3.0/1.0)
+|   |   |   |   |   DM_max_cosSim > 1.95189: contradictory (4.0)
+
+Number of Leaves  : 	240
+
+Size of the tree : 	479
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         964               65.4891 %
+Incorrectly Classified Instances       508               34.5109 %
+Kappa statistic                          0.5399
+Mean absolute error                      0.1836
+Root mean squared error                  0.3818
+Relative absolute error                 48.9713 %
+Root relative squared error             88.169  %
+Total Number of Instances             1472     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.943    0.079    0.800      0.943    0.865      0.821    0.960     0.823     contradictory
+                 0.698    0.120    0.661      0.698    0.679      0.568    0.843     0.635     correct_but_incomplete
+                 0.397    0.132    0.500      0.397    0.442      0.287    0.653     0.416     correct
+                 0.582    0.130    0.599      0.582    0.590      0.457    0.794     0.535     incorrect
+Weighted Avg.    0.655    0.115    0.640      0.655    0.644      0.533    0.812     0.602     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+ 347   5   9   7 |   a = contradictory
+  21 257  51  39 |   b = correct_but_incomplete
+  49  76 146  97 |   c = correct
+  17  51  86 214 |   d = incorrect
+
